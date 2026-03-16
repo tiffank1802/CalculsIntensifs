@@ -1,0 +1,64 @@
+------------------------------------------------------
+SLURM_NNODES: 1
+SLURM_JOB_NODELIST: compute-0-7
+SLURM_SUBMIT_DIR: /export/home/mastermnsgrp04/somme_exercice
+SLURM_SUBMIT_HOST: centaure
+SLURM_JOB_ID: 232989
+SLURM_JOB_NAME: somme
+SLURM_JOB_PARTITION: intensive.q
+SLURM_NTASKS: 10
+SLURM_TASKS_PER_NODE: 10
+SLURM_NTASKS_PER_NODE: 10
+------------------------------------------------------
+Generating hostname list...
+------------------------------------------------------
+Creating SCRATCH directories on nodes compute-0-7...
+------------------------------------------------------
+Run -mpi program...
+rank = 2  size = 10
+Proc : 2, debut = 2001, fin = 3000
+rank = 4  size = 10
+Proc : 4, debut = 4001, fin = 5000
+rank = 5  size = 10
+Proc : 5, debut = 5001, fin = 6000
+rank = 6  size = 10
+Proc : 6, debut = 6001, fin = 7000
+rank = 7  size = 10
+Proc : 7, debut = 7001, fin = 8000
+rank = 8  size = 10
+Proc : 8, debut = 8001, fin = 9000
+rank = 0  size = 10
+Taille : 10000
+Proc : 0, debut = 1, fin = 1000
+rank = 1  size = 10
+Proc : 1, debut = 1001, fin = 2000
+rank = 3  size = 10
+Proc : 3, debut = 3001, fin = 4000
+rank = 9  size = 10
+Proc : 9, debut = 9001, fin = 10000
+rang 8, la somme des entiers de 1 à 10000 vaut : 50005000
+Temps de communication pour la plus mauvaise methode : 0.404288 s
+rang 0, la somme des entiers de 1 à 10000 vaut : 50005000
+rang 1, la somme des entiers de 1 à 10000 vaut : 50005000
+rang 2, la somme des entiers de 1 à 10000 vaut : 50005000
+rang 4, la somme des entiers de 1 à 10000 vaut : 50005000
+rang 5, la somme des entiers de 1 à 10000 vaut : 50005000
+rang 6, la somme des entiers de 1 à 10000 vaut : 50005000
+rang 7, la somme des entiers de 1 à 10000 vaut : 50005000
+rang 3, la somme des entiers de 1 à 10000 vaut : 50005000
+rang 9, la somme des entiers de 1 à 10000 vaut : 50005000
+rang 3, la somme des entiers de 1 à 10000 vaut : 50005000
+rang 8, la somme des entiers de 1 à 10000 vaut : 50005000
+Temps de communication pour la methode intermediaire : 0.392531358000000052399514061108 s
+rang 0, la somme des entiers de 1 à 10000 vaut : 50005000
+rang 1, la somme des entiers de 1 à 10000 vaut : 50005000
+rang 2, la somme des entiers de 1 à 10000 vaut : 50005000
+rang 4, la somme des entiers de 1 à 10000 vaut : 50005000
+rang 5, la somme des entiers de 1 à 10000 vaut : 50005000
+rang 6, la somme des entiers de 1 à 10000 vaut : 50005000
+rang 7, la somme des entiers de 1 à 10000 vaut : 50005000
+rang 9, la somme des entiers de 1 à 10000 vaut : 50005000
+------------------------------------------------------
+Deleting scratch...
+removed directory: '/scratch/mastermnsgrp04-232989'
+------------------------------------------------------

@@ -1,0 +1,47 @@
+------------------------------------------------------
+SLURM_NNODES: 1
+SLURM_JOB_NODELIST: compute-0-7
+SLURM_SUBMIT_DIR: /export/home/mastermnsgrp04/GC_complet
+SLURM_SUBMIT_HOST: centaure
+SLURM_JOB_ID: 233766
+SLURM_JOB_NAME: coeur
+SLURM_JOB_PARTITION: intensive.q
+SLURM_NTASKS: 4
+SLURM_TASKS_PER_NODE: 4
+SLURM_NTASKS_PER_NODE: 4
+------------------------------------------------------
+Generating hostname list...
+------------------------------------------------------
+Creating SCRATCH directories on nodes compute-0-7...
+------------------------------------------------------
+Transferring files from frontend to compute nodes compute-0-7
+'/export/home/mastermnsgrp04/GC_complet/main' -> '/scratch/mastermnsgrp04-233766/main'
+------------------------------------------------------
+Run -mpi4 program...
+/var/spool/slurmd/job233766/slurm_script: line 0: unalias: visit: not found
+Données lues : nx = 100, ny = 100, méthode = 2
+Résidu initial : 3.300e+02
+Fin de l'itération 0, résidu : 1.012e+02
+Fin de l'itération 10, résidu : 1.594e+02
+Fin de l'itération 20, résidu : 9.401e+01
+Fin de l'itération 30, résidu : 4.139e+01
+Fin de l'itération 40, résidu : 1.581e+01
+Fin de l'itération 50, résidu : 3.842e+00
+Fin de l'itération 60, résidu : 4.560e-01
+Fin de l'itération 70, résidu : 8.219e-02
+Fin de l'itération 80, résidu : 5.754e-02
+Fin de l'itération 90, résidu : 1.102e-02
+Fin de l'itération 100, résidu : 2.546e-03
+Fin de l'itération 110, résidu : 4.189e-04
+Résidu final : 9.423e-05, atteint en 118 itérations et 0.051729 s.
+Écriture du fichier vtk------------------------------------------------------
+Transferring result files from compute nodes to frontend
+'/scratch/mastermnsgrp04-233766' -> '/export/home/mastermnsgrp04/GC_complet/mastermnsgrp04-233766'
+'/scratch/mastermnsgrp04-233766/main' -> '/export/home/mastermnsgrp04/GC_complet/mastermnsgrp04-233766/main'
+'/scratch/mastermnsgrp04-233766/TP_CHP.vtk' -> '/export/home/mastermnsgrp04/GC_complet/mastermnsgrp04-233766/TP_CHP.vtk'
+------------------------------------------------------
+Deleting scratch...
+removed '/scratch/mastermnsgrp04-233766/main'
+removed '/scratch/mastermnsgrp04-233766/TP_CHP.vtk'
+removed directory: '/scratch/mastermnsgrp04-233766'
+------------------------------------------------------

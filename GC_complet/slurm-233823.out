@@ -1,0 +1,158 @@
+------------------------------------------------------
+SLURM_NNODES: 1
+SLURM_JOB_NODELIST: compute-0-7
+SLURM_SUBMIT_DIR: /export/home/mastermnsgrp04/GC_complet
+SLURM_SUBMIT_HOST: centaure
+SLURM_JOB_ID: 233823
+SLURM_JOB_NAME: coeur
+SLURM_JOB_PARTITION: intensive.q
+SLURM_NTASKS: 5
+SLURM_TASKS_PER_NODE: 5
+SLURM_NTASKS_PER_NODE: 5
+------------------------------------------------------
+Generating hostname list...
+------------------------------------------------------
+Creating SCRATCH directories on nodes compute-0-7...
+------------------------------------------------------
+Transferring files from frontend to compute nodes compute-0-7
+'/export/home/mastermnsgrp04/GC_complet/main' -> '/scratch/mastermnsgrp04-233823/main'
+------------------------------------------------------
+Run -mpi4 program...
+/var/spool/slurmd/job233823/slurm_script: line 0: unalias: visit: not found
+Données lues : nx = 500, ny = 1000, méthode = 2
+Résidu initial : 2.353e+03
+Fin de l'itération 0, résidu : 7.409e+02
+Fin de l'itération 10, résidu : 6.317e+03
+Fin de l'itération 20, résidu : 6.004e+03
+Fin de l'itération 30, résidu : 5.995e+03
+Fin de l'itération 40, résidu : 5.354e+03
+Fin de l'itération 50, résidu : 5.197e+03
+Fin de l'itération 60, résidu : 4.822e+03
+Fin de l'itération 70, résidu : 4.427e+03
+Fin de l'itération 80, résidu : 4.151e+03
+Fin de l'itération 90, résidu : 3.917e+03
+Fin de l'itération 100, résidu : 3.660e+03
+Fin de l'itération 110, résidu : 3.382e+03
+Fin de l'itération 120, résidu : 3.118e+03
+Fin de l'itération 130, résidu : 2.883e+03
+Fin de l'itération 140, résidu : 2.674e+03
+Fin de l'itération 150, résidu : 2.482e+03
+Fin de l'itération 160, résidu : 2.299e+03
+Fin de l'itération 170, résidu : 2.119e+03
+Fin de l'itération 180, résidu : 1.945e+03
+Fin de l'itération 190, résidu : 1.779e+03
+Fin de l'itération 200, résidu : 1.624e+03
+Fin de l'itération 210, résidu : 1.481e+03
+Fin de l'itération 220, résidu : 1.349e+03
+Fin de l'itération 230, résidu : 1.228e+03
+Fin de l'itération 240, résidu : 1.115e+03
+Fin de l'itération 250, résidu : 1.010e+03
+Fin de l'itération 260, résidu : 9.109e+02
+Fin de l'itération 270, résidu : 8.183e+02
+Fin de l'itération 280, résidu : 7.318e+02
+Fin de l'itération 290, résidu : 6.517e+02
+Fin de l'itération 300, résidu : 5.777e+02
+Fin de l'itération 310, résidu : 5.101e+02
+Fin de l'itération 320, résidu : 4.484e+02
+Fin de l'itération 330, résidu : 3.924e+02
+Fin de l'itération 340, résidu : 3.416e+02
+Fin de l'itération 350, résidu : 2.957e+02
+Fin de l'itération 360, résidu : 2.542e+02
+Fin de l'itération 370, résidu : 2.169e+02
+Fin de l'itération 380, résidu : 1.835e+02
+Fin de l'itération 390, résidu : 1.537e+02
+Fin de l'itération 400, résidu : 1.273e+02
+Fin de l'itération 410, résidu : 1.042e+02
+Fin de l'itération 420, résidu : 8.421e+01
+Fin de l'itération 430, résidu : 6.704e+01
+Fin de l'itération 440, résidu : 5.250e+01
+Fin de l'itération 450, résidu : 4.038e+01
+Fin de l'itération 460, résidu : 3.048e+01
+Fin de l'itération 470, résidu : 2.258e+01
+Fin de l'itération 480, résidu : 1.652e+01
+Fin de l'itération 490, résidu : 1.216e+01
+Fin de l'itération 500, résidu : 9.425e+00
+Fin de l'itération 510, résidu : 8.411e+00
+Fin de l'itération 520, résidu : 9.559e+00
+Fin de l'itération 530, résidu : 1.411e+01
+Fin de l'itération 540, résidu : 2.270e+01
+Fin de l'itération 550, résidu : 1.699e+01
+Fin de l'itération 560, résidu : 3.428e+00
+Fin de l'itération 570, résidu : 1.976e+00
+Fin de l'itération 580, résidu : 3.124e+00
+Fin de l'itération 590, résidu : 3.436e+00
+Fin de l'itération 600, résidu : 2.747e+00
+Fin de l'itération 610, résidu : 2.271e+00
+Fin de l'itération 620, résidu : 1.543e+00
+Fin de l'itération 630, résidu : 1.581e+00
+Fin de l'itération 640, résidu : 1.430e+00
+Fin de l'itération 650, résidu : 1.176e+00
+Fin de l'itération 660, résidu : 1.083e+00
+Fin de l'itération 670, résidu : 8.425e-01
+Fin de l'itération 680, résidu : 7.342e-01
+Fin de l'itération 690, résidu : 6.324e-01
+Fin de l'itération 700, résidu : 5.531e-01
+Fin de l'itération 710, résidu : 4.524e-01
+Fin de l'itération 720, résidu : 3.883e-01
+Fin de l'itération 730, résidu : 3.571e-01
+Fin de l'itération 740, résidu : 2.946e-01
+Fin de l'itération 750, résidu : 2.440e-01
+Fin de l'itération 760, résidu : 2.112e-01
+Fin de l'itération 770, résidu : 1.791e-01
+Fin de l'itération 780, résidu : 1.483e-01
+Fin de l'itération 790, résidu : 1.269e-01
+Fin de l'itération 800, résidu : 1.055e-01
+Fin de l'itération 810, résidu : 8.308e-02
+Fin de l'itération 820, résidu : 6.713e-02
+Fin de l'itération 830, résidu : 5.766e-02
+Fin de l'itération 840, résidu : 4.707e-02
+Fin de l'itération 850, résidu : 3.553e-02
+Fin de l'itération 860, résidu : 3.024e-02
+Fin de l'itération 870, résidu : 2.446e-02
+Fin de l'itération 880, résidu : 1.867e-02
+Fin de l'itération 890, résidu : 1.516e-02
+Fin de l'itération 900, résidu : 1.201e-02
+Fin de l'itération 910, résidu : 9.202e-03
+Fin de l'itération 920, résidu : 7.186e-03
+Fin de l'itération 930, résidu : 5.479e-03
+Fin de l'itération 940, résidu : 4.396e-03
+Fin de l'itération 950, résidu : 3.337e-03
+Fin de l'itération 960, résidu : 2.717e-03
+Fin de l'itération 970, résidu : 2.151e-03
+Fin de l'itération 980, résidu : 1.929e-03
+Fin de l'itération 990, résidu : 1.704e-03
+Fin de l'itération 1000, résidu : 1.728e-03
+Fin de l'itération 1010, résidu : 1.739e-03
+Fin de l'itération 1020, résidu : 1.908e-03
+Fin de l'itération 1030, résidu : 2.033e-03
+Fin de l'itération 1040, résidu : 2.110e-03
+Fin de l'itération 1050, résidu : 2.066e-03
+Fin de l'itération 1060, résidu : 1.923e-03
+Fin de l'itération 1070, résidu : 1.765e-03
+Fin de l'itération 1080, résidu : 1.773e-03
+Fin de l'itération 1090, résidu : 1.875e-03
+Fin de l'itération 1100, résidu : 1.711e-03
+Fin de l'itération 1110, résidu : 1.654e-03
+Fin de l'itération 1120, résidu : 3.697e-04
+Fin de l'itération 1130, résidu : 1.125e-03
+Fin de l'itération 1140, résidu : 5.496e-04
+Fin de l'itération 1150, résidu : 4.302e-04
+Fin de l'itération 1160, résidu : 3.533e-04
+Fin de l'itération 1170, résidu : 3.611e-04
+Fin de l'itération 1180, résidu : 2.297e-04
+Fin de l'itération 1190, résidu : 1.871e-04
+Fin de l'itération 1200, résidu : 1.680e-04
+Fin de l'itération 1210, résidu : 1.227e-04
+Fin de l'itération 1220, résidu : 1.187e-04
+Résidu final : 9.746e-05, atteint en 1223 itérations et 23.096436 s.
+Écriture du fichier vtk------------------------------------------------------
+Transferring result files from compute nodes to frontend
+'/scratch/mastermnsgrp04-233823' -> '/export/home/mastermnsgrp04/GC_complet/mastermnsgrp04-233823'
+'/scratch/mastermnsgrp04-233823/main' -> '/export/home/mastermnsgrp04/GC_complet/mastermnsgrp04-233823/main'
+'/scratch/mastermnsgrp04-233823/TP_CHP.vtk' -> '/export/home/mastermnsgrp04/GC_complet/mastermnsgrp04-233823/TP_CHP.vtk'
+------------------------------------------------------
+Deleting scratch...
+removed '/scratch/mastermnsgrp04-233823/main'
+removed '/scratch/mastermnsgrp04-233823/TP_CHP.vtk'
+removed directory: '/scratch/mastermnsgrp04-233823'
+------------------------------------------------------

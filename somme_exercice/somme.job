@@ -1,0 +1,48 @@
+#!/bin/bash
+#SBATCH --job-name=somme
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=10
+#SBATCH --time=00:05:00
+ulimit -l unlimited
+unset SLURM_GTIDS
+
+echo ------------------------------------------------------
+echo SLURM_NNODES: $SLURM_NNODES
+echo SLURM_JOB_NODELIST: $SLURM_JOB_NODELIST
+echo SLURM_SUBMIT_DIR: $SLURM_SUBMIT_DIR
+echo SLURM_SUBMIT_HOST: $SLURM_SUBMIT_HOST
+echo SLURM_JOB_ID: $SLURM_JOB_ID
+echo SLURM_JOB_NAME: $SLURM_JOB_NAME
+echo SLURM_JOB_PARTITION: $SLURM_JOB_PARTITION
+echo SLURM_NTASKS: $SLURM_NTASKS
+echo SLURM_TASKS_PER_NODE: $SLURM_TASKS_PER_NODE
+echo SLURM_NTASKS_PER_NODE: $SLURM_NTASKS_PER_NODE
+echo ------------------------------------------------------
+
+echo Generating hostname list...
+COMPUTEHOSTLIST=$( scontrol show hostnames $SLURM_JOB_NODELIST | paste -d, -s | sed "s/\(,\|$\)/:$SLURM_NTASKS_PER_NODE\1/g")
+echo ------------------------------------------------------
+
+echo Creating SCRATCH directories on nodes $SLURM_JOB_NODELIST...
+SCRATCH=/scratch/$USER-$SLURM_JOB_ID
+srun -n$SLURM_NNODES mkdir -m 770 -p $SCRATCH  || exit $?
+echo ------------------------------------------------------
+#echo Transferring files from frontend to compute nodes $SLURM_JOB_NODELIST
+#srun -n$SLURM_NNODES cp -rvf $SLURM_SUBMIT_DIR/Somme $SCRATCH  || exit $?
+#echo ------------------------------------------------------
+
+echo Run -mpi program...
+module purge
+module load gcc/9.3.0
+module load mpi/openmpi-4.1.1-gcc9-3
+cd $SCRATCH
+mpirun -np $SLURM_NTASKS -mca btl openib,vader,self -mca btl_openib_allow_ib 1 -host $COMPUTEHOSTLIST $SLURM_SUBMIT_DIR/somme 100
+echo ------------------------------------------------------
+
+#echo Transferring result files from compute nodes to frontend
+#srun -n$SLURM_NNODES cp -rvf $SCRATCH  $SLURM_SUBMIT_DIR   || exit $?
+#echo ------------------------------------------------------
+echo Deleting scratch...
+srun -n$SLURM_NNODES rm -rvf $SCRATCH  || exit $?
+echo ------------------------------------------------------
+

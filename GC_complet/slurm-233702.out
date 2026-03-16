@@ -1,0 +1,79 @@
+------------------------------------------------------
+SLURM_NNODES: 4
+SLURM_JOB_NODELIST: compute-0-[1-3,12]
+SLURM_SUBMIT_DIR: /export/home/mastermnsgrp04/GC_complet
+SLURM_SUBMIT_HOST: centaure
+SLURM_JOB_ID: 233702
+SLURM_JOB_NAME: coeur
+SLURM_JOB_PARTITION: intensive.q
+SLURM_NTASKS: 8
+SLURM_TASKS_PER_NODE: 2(x4)
+SLURM_NTASKS_PER_NODE: 2
+------------------------------------------------------
+Generating hostname list...
+------------------------------------------------------
+Creating SCRATCH directories on nodes compute-0-[1-3,12]...
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 4 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+------------------------------------------------------
+Transferring files from frontend to compute nodes compute-0-[1-3,12]
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 4 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+'/export/home/mastermnsgrp04/GC_complet/main' -> '/scratch/mastermnsgrp04-233702/main'
+'/export/home/mastermnsgrp04/GC_complet/main' -> '/scratch/mastermnsgrp04-233702/main'
+'/export/home/mastermnsgrp04/GC_complet/main' -> '/scratch/mastermnsgrp04-233702/main'
+'/export/home/mastermnsgrp04/GC_complet/main' -> '/scratch/mastermnsgrp04-233702/main'
+------------------------------------------------------
+Run -mpi4 program...
+--------------------------------------------------------------------------
+WARNING: There is at least non-excluded one OpenFabrics device found,
+but there are no active ports detected (or Open MPI was unable to use
+them).  This is most certainly not what you wanted.  Check your
+cables, subnet manager configuration, etc.  The openib BTL will be
+ignored for this job.
+
+  Local host: compute-0-12
+--------------------------------------------------------------------------
+Données lues : nx = 1000, ny = 1000, méthode = 2
+--------------------------------------------------------------------------
+At least one pair of MPI processes are unable to reach each other for
+MPI communications.  This means that no Open MPI device has indicated
+that it can be used to communicate between these processes.  This is
+an error; Open MPI requires that all MPI processes be able to reach
+each other.  This error can sometimes be the result of forgetting to
+specify the "self" BTL.
+
+  Process 1 ([[28875,1],6]) is on host: compute-0-12
+  Process 2 ([[28875,1],4]) is on host: compute-0-3
+  BTLs attempted: self vader
+
+Your MPI job is now going to abort; sorry.
+--------------------------------------------------------------------------
+[compute-0-3:19596] *** An error occurred in MPI_Allgather
+[compute-0-3:19596] *** reported by process [1892352001,5]
+[compute-0-3:19596] *** on communicator MPI_COMM_WORLD
+[compute-0-3:19596] *** MPI_ERR_INTERN: internal error
+[compute-0-3:19596] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[compute-0-3:19596] ***    and potentially your MPI job)
+[compute-0-1:49330] 1 more process has sent help message help-mpi-btl-openib.txt / no active ports found
+[compute-0-1:49330] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[compute-0-1:49330] 5 more processes have sent help message help-mca-bml-r2.txt / unreachable proc
+[compute-0-1:49330] 5 more processes have sent help message help-mpi-errors.txt / mpi_errors_are_fatal
+------------------------------------------------------
+Transferring result files from compute nodes to frontend
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 4 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+'/scratch/mastermnsgrp04-233702/main' -> '/export/home/mastermnsgrp04/GC_complet/mastermnsgrp04-233702/main'
+'/scratch/mastermnsgrp04-233702' -> '/export/home/mastermnsgrp04/GC_complet/mastermnsgrp04-233702'
+'/scratch/mastermnsgrp04-233702/main' -> '/export/home/mastermnsgrp04/GC_complet/mastermnsgrp04-233702/main'
+'/scratch/mastermnsgrp04-233702/main' -> '/export/home/mastermnsgrp04/GC_complet/mastermnsgrp04-233702/main'
+'/scratch/mastermnsgrp04-233702/main' -> '/export/home/mastermnsgrp04/GC_complet/mastermnsgrp04-233702/main'
+------------------------------------------------------
+Deleting scratch...
+srun: Warning: can't honor --ntasks-per-node set to 2 which doesn't match the requested tasks 4 with the number of requested nodes 4. Ignoring --ntasks-per-node.
+removed '/scratch/mastermnsgrp04-233702/main'
+removed directory: '/scratch/mastermnsgrp04-233702'
+removed '/scratch/mastermnsgrp04-233702/main'
+removed directory: '/scratch/mastermnsgrp04-233702'
+removed '/scratch/mastermnsgrp04-233702/main'
+removed directory: '/scratch/mastermnsgrp04-233702'
+removed '/scratch/mastermnsgrp04-233702/main'
+removed directory: '/scratch/mastermnsgrp04-233702'
+------------------------------------------------------

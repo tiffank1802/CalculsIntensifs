@@ -1,0 +1,41 @@
+------------------------------------------------------
+SLURM_NNODES: 2
+SLURM_JOB_NODELIST: compute-0-[5-6]
+SLURM_SUBMIT_DIR: /export/home/mastermnsgrp04/somme_exercice
+SLURM_SUBMIT_HOST: centaure
+SLURM_JOB_ID: 232948
+SLURM_JOB_NAME: somme
+SLURM_JOB_PARTITION: intensive.q
+SLURM_NTASKS: 4
+SLURM_TASKS_PER_NODE: 2(x2)
+SLURM_NTASKS_PER_NODE: 2
+------------------------------------------------------
+Generating hostname list...
+------------------------------------------------------
+Creating SCRATCH directories on nodes compute-0-[5-6]...
+------------------------------------------------------
+Run -mpi program...
+rank = 1  size = 4
+Proc : 1, debut = 250001, fin = 500000
+rank = 0  size = 4
+Taille : 1000000
+Proc : 0, debut = 1, fin = 250000
+rank = 2  size = 4
+Proc : 2, debut = 500001, fin = 750000
+rank = 3  size = 4
+Proc : 3, debut = 750001, fin = 1000000
+rang 1, la somme des entiers de 1 à 1000000 vaut : 0
+Temps de communication pour la plus mauvaise methode : 0.000242265 s
+rang 0, la somme des entiers de 1 à 1000000 vaut : 0
+rang 2, la somme des entiers de 1 à 1000000 vaut : 0
+rang 3, la somme des entiers de 1 à 1000000 vaut : 0
+rang 1, la somme des entiers de 1 à 1000000 vaut : 0
+Temps de communication pour la methode intermediaire : 0.000235999999999999990167587338163 s
+rang 0, la somme des entiers de 1 à 1000000 vaut : 0
+rang 2, la somme des entiers de 1 à 1000000 vaut : 0
+rang 3, la somme des entiers de 1 à 1000000 vaut : 0
+------------------------------------------------------
+Deleting scratch...
+removed directory: '/scratch/mastermnsgrp04-232948'
+removed directory: '/scratch/mastermnsgrp04-232948'
+------------------------------------------------------

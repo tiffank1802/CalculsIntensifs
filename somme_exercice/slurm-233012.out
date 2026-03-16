@@ -1,0 +1,75 @@
+------------------------------------------------------
+SLURM_NNODES: 1
+SLURM_JOB_NODELIST: compute-0-7
+SLURM_SUBMIT_DIR: /export/home/mastermnsgrp04/somme_exercice
+SLURM_SUBMIT_HOST: centaure
+SLURM_JOB_ID: 233012
+SLURM_JOB_NAME: somme
+SLURM_JOB_PARTITION: intensive.q
+SLURM_NTASKS: 10
+SLURM_TASKS_PER_NODE: 10
+SLURM_NTASKS_PER_NODE: 10
+------------------------------------------------------
+Generating hostname list...
+------------------------------------------------------
+Creating SCRATCH directories on nodes compute-0-7...
+------------------------------------------------------
+Run -mpi program...
+rank = 0  size = 10
+Taille : 100
+Proc : 0, debut = 1, fin = 10
+rank = 1  size = 10
+Proc : 1, debut = 11, fin = 20
+rank = 2  size = 10
+Proc : 2, debut = 21, fin = 30
+rank = 3  size = 10
+Proc : 3, debut = 31, fin = 40
+rank = 6  size = 10
+Proc : 6, debut = 61, fin = 70
+rank = 7  size = 10
+Proc : 7, debut = 71, fin = 80
+rank = 9  size = 10
+Proc : 9, debut = 91, fin = 100
+rank = 4  size = 10
+rank = 5  size = 10
+Proc : 5, debut = 51, fin = 60
+rank = 8  size = 10
+Proc : 8, debut = 81, fin = 90
+Proc : 4, debut = 41, fin = 50
+Temps de communication pour la plus mauvaise methode : 0.398791 s
+rang 0, la somme des entiers de 1 à 100 vaut : 5050
+rang 1, la somme des entiers de 1 à 100 vaut : 5050
+rang 2, la somme des entiers de 1 à 100 vaut : 5050
+rang 9, la somme des entiers de 1 à 100 vaut : 5050
+rang 8, la somme des entiers de 1 à 100 vaut : 5050
+rang 3, la somme des entiers de 1 à 100 vaut : 5050
+rang 6, la somme des entiers de 1 à 100 vaut : 5050
+rang 5, la somme des entiers de 1 à 100 vaut : 5050
+rang 7, la somme des entiers de 1 à 100 vaut : 5050
+rang 4, la somme des entiers de 1 à 100 vaut : 5050
+rang 7, la somme des entiers de 1 à 100 vaut : 5050
+Temps de communication pour la methode intermediaire : 0.380060810999999998394116573763 s
+rang 0, la somme des entiers de 1 à 100 vaut : 5050
+rang 1, la somme des entiers de 1 à 100 vaut : 5050
+rang 2, la somme des entiers de 1 à 100 vaut : 5050
+rang 9, la somme des entiers de 1 à 100 vaut : 5050
+rang 8, la somme des entiers de 1 à 100 vaut : 5050
+rang 3, la somme des entiers de 1 à 100 vaut : 5050
+rang 6, la somme des entiers de 1 à 100 vaut : 5050
+rang 5, la somme des entiers de 1 à 100 vaut : 5050
+rang 4, la somme des entiers de 1 à 100 vaut : 5050
+rang 5, la somme des entiers de 1 à 100 vaut : 5050
+rang 7, la somme des entiers de 1 à 100 vaut : 5050
+Temps de communication pour la methode MPI_Allreduce : 0.243922369000000083261170402693 s
+rang 0, la somme des entiers de 1 à 100 vaut : 5050
+rang 1, la somme des entiers de 1 à 100 vaut : 5050
+rang 2, la somme des entiers de 1 à 100 vaut : 5050
+rang 9, la somme des entiers de 1 à 100 vaut : 5050
+rang 8, la somme des entiers de 1 à 100 vaut : 5050
+rang 3, la somme des entiers de 1 à 100 vaut : 5050
+rang 6, la somme des entiers de 1 à 100 vaut : 5050
+rang 4, la somme des entiers de 1 à 100 vaut : 5050
+------------------------------------------------------
+Deleting scratch...
+removed directory: '/scratch/mastermnsgrp04-233012'
+------------------------------------------------------

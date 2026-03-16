@@ -1,0 +1,102 @@
+------------------------------------------------------
+SLURM_NNODES: 1
+SLURM_JOB_NODELIST: compute-0-6
+SLURM_SUBMIT_DIR: /export/home/mastermnsgrp04/GC_complet
+SLURM_SUBMIT_HOST: centaure
+SLURM_JOB_ID: 233820
+SLURM_JOB_NAME: coeur
+SLURM_JOB_PARTITION: intensive.q
+SLURM_NTASKS: 4
+SLURM_TASKS_PER_NODE: 4
+SLURM_NTASKS_PER_NODE: 4
+------------------------------------------------------
+Generating hostname list...
+------------------------------------------------------
+Creating SCRATCH directories on nodes compute-0-6...
+------------------------------------------------------
+Transferring files from frontend to compute nodes compute-0-6
+'/export/home/mastermnsgrp04/GC_complet/main' -> '/scratch/mastermnsgrp04-233820/main'
+------------------------------------------------------
+Run -mpi4 program...
+/var/spool/slurmd/job233820/slurm_script: line 0: unalias: visit: not found
+Données lues : nx = 500, ny = 500, méthode = 2
+Résidu initial : 1.663e+03
+Fin de l'itération 0, résidu : 5.228e+02
+Fin de l'itération 10, résidu : 2.989e+03
+Fin de l'itération 20, résidu : 2.911e+03
+Fin de l'itération 30, résidu : 3.001e+03
+Fin de l'itération 40, résidu : 2.482e+03
+Fin de l'itération 50, résidu : 2.230e+03
+Fin de l'itération 60, résidu : 2.068e+03
+Fin de l'itération 70, résidu : 1.862e+03
+Fin de l'itération 80, résidu : 1.633e+03
+Fin de l'itération 90, résidu : 1.421e+03
+Fin de l'itération 100, résidu : 1.239e+03
+Fin de l'itération 110, résidu : 1.083e+03
+Fin de l'itération 120, résidu : 9.475e+02
+Fin de l'itération 130, résidu : 8.261e+02
+Fin de l'itération 140, résidu : 7.160e+02
+Fin de l'itération 150, résidu : 6.159e+02
+Fin de l'itération 160, résidu : 5.251e+02
+Fin de l'itération 170, résidu : 4.433e+02
+Fin de l'itération 180, résidu : 3.703e+02
+Fin de l'itération 190, résidu : 3.059e+02
+Fin de l'itération 200, résidu : 2.496e+02
+Fin de l'itération 210, résidu : 2.010e+02
+Fin de l'itération 220, résidu : 1.594e+02
+Fin de l'itération 230, résidu : 1.242e+02
+Fin de l'itération 240, résidu : 9.477e+01
+Fin de l'itération 250, résidu : 7.061e+01
+Fin de l'itération 260, résidu : 5.110e+01
+Fin de l'itération 270, résidu : 3.570e+01
+Fin de l'itération 280, résidu : 2.392e+01
+Fin de l'itération 290, résidu : 1.528e+01
+Fin de l'itération 300, résidu : 9.371e+00
+Fin de l'itération 310, résidu : 5.861e+00
+Fin de l'itération 320, résidu : 4.707e+00
+Fin de l'itération 330, résidu : 6.868e+00
+Fin de l'itération 340, résidu : 1.347e+01
+Fin de l'itération 350, résidu : 1.714e+00
+Fin de l'itération 360, résidu : 3.405e+00
+Fin de l'itération 370, résidu : 8.383e-01
+Fin de l'itération 380, résidu : 8.365e-01
+Fin de l'itération 390, résidu : 8.052e-01
+Fin de l'itération 400, résidu : 6.684e-01
+Fin de l'itération 410, résidu : 5.087e-01
+Fin de l'itération 420, résidu : 4.087e-01
+Fin de l'itération 430, résidu : 2.721e-01
+Fin de l'itération 440, résidu : 2.190e-01
+Fin de l'itération 450, résidu : 1.659e-01
+Fin de l'itération 460, résidu : 1.386e-01
+Fin de l'itération 470, résidu : 9.475e-02
+Fin de l'itération 480, résidu : 6.973e-02
+Fin de l'itération 490, résidu : 5.334e-02
+Fin de l'itération 500, résidu : 3.998e-02
+Fin de l'itération 510, résidu : 2.893e-02
+Fin de l'itération 520, résidu : 2.053e-02
+Fin de l'itération 530, résidu : 1.425e-02
+Fin de l'itération 540, résidu : 9.993e-03
+Fin de l'itération 550, résidu : 7.131e-03
+Fin de l'itération 560, résidu : 4.918e-03
+Fin de l'itération 570, résidu : 3.090e-03
+Fin de l'itération 580, résidu : 1.955e-03
+Fin de l'itération 590, résidu : 1.331e-03
+Fin de l'itération 600, résidu : 8.372e-04
+Fin de l'itération 610, résidu : 5.519e-04
+Fin de l'itération 620, résidu : 4.201e-04
+Fin de l'itération 630, résidu : 3.121e-04
+Fin de l'itération 640, résidu : 2.598e-04
+Fin de l'itération 650, résidu : 1.739e-04
+Fin de l'itération 660, résidu : 1.065e-04
+Résidu final : 9.690e-05, atteint en 662 itérations et 4.337687 s.
+Écriture du fichier vtk------------------------------------------------------
+Transferring result files from compute nodes to frontend
+'/scratch/mastermnsgrp04-233820' -> '/export/home/mastermnsgrp04/GC_complet/mastermnsgrp04-233820'
+'/scratch/mastermnsgrp04-233820/main' -> '/export/home/mastermnsgrp04/GC_complet/mastermnsgrp04-233820/main'
+'/scratch/mastermnsgrp04-233820/TP_CHP.vtk' -> '/export/home/mastermnsgrp04/GC_complet/mastermnsgrp04-233820/TP_CHP.vtk'
+------------------------------------------------------
+Deleting scratch...
+removed '/scratch/mastermnsgrp04-233820/main'
+removed '/scratch/mastermnsgrp04-233820/TP_CHP.vtk'
+removed directory: '/scratch/mastermnsgrp04-233820'
+------------------------------------------------------
